@@ -1,0 +1,290 @@
+html, body {
+    height: 50%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #b2eff3; 
+
+    background-image: url('background-pogoda-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    /* filter: blur(5px); */
+}
+
+
+.padding {
+    padding-top: 20px;
+}
+
+
+.container-search {
+    width: 280px;
+    height: 80px;
+    background-color: rgba(245, 245, 245, 0.850);
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background 1.25s;
+    /* border-width: 4px;
+    border-spacing: 10px;
+    border-style: dashed;
+    border-color: #000; */
+}
+
+.container-search:hover{
+    background-color:rgb(245, 245, 245) ;
+}
+
+.search {
+    text-align: center;
+    margin: auto;
+}
+
+#city{
+    border: rgba(0, 0, 0, 0.850) 2px solid;
+    border-radius: 8px;
+}
+
+#wysz {
+    border: rgba(0, 0, 0, 0.850) 2px solid;
+    border-radius: 8px;
+}
+
+.container {
+    text-align: center;
+}
+
+.section {
+    position:absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.clock {
+    position: fixed;
+    top: 20px; 
+    right: 200px; 
+    width: 410px;
+    height: 85px;
+    background: rgba(255,255,255,0.05);
+    z-index: 1000;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+}
+
+.clock .container-clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.clock .container-clock h2 {
+    font-size: 2.5em;
+    color: white;
+    font-family: 'Lilita One', sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#hour {
+    height: 50px;
+    width: 40px;
+}
+
+
+#minute {
+    height: 50px;
+    width: 40px;
+}
+
+#secound {
+    height: 50px;
+    width: 40px;
+}
+
+.clock .container-clock h2:nth-child(odd) {
+    padding: 5px 15px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    margin: 0 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.clock .container-clock h2#secound {
+    color: white;
+}
+
+#ampm {
+    position: relative;
+    top: -20px;
+    font-size: 1.7em;
+    color: white;
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 700;
+}
+
+.containerV2 {
+    margin: auto;  
+    display: flex;
+    width: 90%;
+    height: 420px;
+    background-color: whitesmoke;
+    border: black 2px dashed;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.date {
+    margin-right: auto;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+    text-align: left;
+    width: 353.64px;
+    font-weight: 900;
+    font-size: 30px;
+    padding-left: 60px;
+}
+
+.currentDate {
+    margin-right: auto;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+    margin-top: 10px;
+}
+
+.currentCityText{
+    margin-right: auto;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    font-size: 58px;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+    margin-top: 20px;
+}
+
+.temperature-city {
+    margin-right: auto;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    font-size: 105px;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.main-logo{
+    width: 500px;
+    height: 500px;
+}
+
+
+
+.info {
+    margin-left: auto;
+    text-align: left;
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    padding-right: 100px;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+    width: 459.44px;
+    height: 450px;
+}
+
+.info p {
+    margin: 35px 0; 
+    display: flex;
+    align-items: center;
+}
+
+.thermometer{
+    width: 40px;
+    height: 40px;
+    padding-right:5px;
+}
+
+.humidity{
+    width: 40px;
+    height: 40px;
+    padding-right:5px;
+}
+
+.up-arrow{
+    width: 40px;
+    height: 40px;
+    padding-right:5px;
+}
+
+.witness{
+    width: 40px;
+    height: 40px;
+    padding-right:5px;
+}
+
+.windock{
+    width: 40px;
+    height: 40px;
+    padding-right:5px;
+}
+
+.week {
+    display: flex;
+    justify-content: center;
+}
+
+.day {
+    width: 260px;
+    height: 340px;
+    background-color: whitesmoke;
+    margin: 14px;
+    border: black 2px dashed;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.day-of-week {
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    color: rgb(24, 24, 24);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.weather-icon {
+    width: 110px;
+    height: 110px;
+
+}
+
+.day .temperature {
+    font-size: 24px;
+    color: white;
+    -webkit-text-stroke: 1.3px black;
+    font-family: 'Kanit', sans-serif;
+}
+
+.day .wind-speed {
+    font-size: 21px;
+    color: white;
+    -webkit-text-stroke: 1.3px black;
+    font-family: 'Kanit', sans-serif;
+}

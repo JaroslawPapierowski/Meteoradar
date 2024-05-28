@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pogoda</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Kanit:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+
+</head>
+<body>
+            <div class="padding">
+                <div class="container-search" > 
+                    <div class="search">
+                        <input type="text" id="city" placeholder="Wpisz swoje Misto lub Państwo"> 
+                        <button id="wysz" onclick="handleClick()"><span class="material-symbols-outlined">search</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="clock">
+                    <div class="container-clock">
+                        <h2 id="hour">00</h2>
+                        <h2 class="dot">:</h2>
+                        <h2 id="minute">00</h2>
+                        <h2 class="dot">:</h2>
+                        <h2 id="secound">00</h2>
+                        <span id="ampm">AM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                
+                <div class="containerV2">
+                    <div class="date">
+                        <div id="currentDateText">Dzień, Miesiąc, Rok </div> 
+                        <div id="currentDate" class="currentDate"></div>
+                        <div id="currentCityText" class="currentCityText">LOCATION</div>
+                        <div class="temperature-city"><span id="temperature" ></span>°C</div>
+                    </div>
+
+                    <img id="main-logo">
+                    
+                    
+                    <div class="info">
+                        <!-- <p>Temperatura: <span id="temperature"></span>°C</p>  -->
+                        <p><img src="thermometer.png" class="thermometer"> Temperatura odczuwalna: <span id="feels-like-temperature"></span>°C</p>
+                        <p><img src="humidity.png" class="humidity">Wilgotność: <span id="humidity"></span>%</p>
+                        <p><img src="up-arrow.png" class="up-arrow">Ciśnieniu: <span id="pressure"></span>hPa</p>
+                        <p><img src="witness.png" class="witness">Widoczność: <span id="visibility"></span> m</p>
+                        <p><img src="windock.png" class="thermometer">Prędkość wiatru: <span id="wind-speed"></span> m/s</p>
+
+                    </div>
+                </div>
+
+
+                <div class="week">
+                    <div class="day">
+                        <div class="day-of-week"></div>
+                        <img class="weather-icon">
+                        <div class="temperature"></div>
+                        <div class="wind-speed"></div>
+                    </div>
+                    
+                    <div class="day">
+                        <div class="day-of-week"></div>
+                        <img class="weather-icon">
+                        <div class="temperature"></div>
+                        <div class="wind-speed"></div>
+                    </div>
+
+                    <div class="day">
+                        <div class="day-of-week"></div>
+                        <img class="weather-icon">
+                        <div class="temperature"></div>
+                        <div class="wind-speed"></div>
+                    </div>
+
+                    <div class="day">
+                        <div class="day-of-week"></div>
+                        <img class="weather-icon">
+                        <div class="temperature"></div>
+                        <div class="wind-speed"></div>
+                    </div>
+
+                    <div class="day">
+                        <div class="day-of-week"></div>
+                        <img class="weather-icon">
+                        <div class="temperature"></div>
+                        <div class="wind-speed"></div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        <script src="app.js"></script>
+</body>
+</html>
